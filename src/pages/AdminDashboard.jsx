@@ -19,7 +19,7 @@ const AdminDashboard = () => {
 
   const loadCoupons = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/admin/view", {
+      const res = await axios.get("https://roundrobinbackend-sn4n.onrender.com/api/admin/view", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setCoupons(res.data);
@@ -38,7 +38,7 @@ const AdminDashboard = () => {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/admin/add",
+        "https://roundrobinbackend-sn4n.onrender.com/api/admin/add",
         { name, category, count: Number(count) },
         {
           headers: {

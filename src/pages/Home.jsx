@@ -43,8 +43,8 @@ const claimCoupon = async () => {
 
         // Select API based on user type
         const endpoint = user.guest
-            ? "http://localhost:5000/api/coupons/issue/guest"
-            : "http://localhost:5000/api/coupons/issue/loggedin";
+            ? "https://roundrobinbackend-sn4n.onrender.com/api/coupons/issue/guest"
+            : "https://roundrobinbackend-sn4n.onrender.com/api/coupons/issue/loggedin";
 
         // Prepare request body (only include guestId & fingerprint for guests)
         const requestBody = user.guest
