@@ -43,6 +43,10 @@ const AdminLogin = () => {
         <button className="bg-blue-500 text-white px-4 py-2 w-full rounded">
           Login
         </button>
+        <p className="mt-4 text-center">
+          <a href="/" className="text-blue-500 hover:underline">Back to Login</a>
+        </p>
+          
       </form>
     </div>
   );
